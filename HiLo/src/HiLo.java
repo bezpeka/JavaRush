@@ -28,21 +28,25 @@ public class HiLo {
 					В результате дробная часть после запятой отбрасывается и остается значение 1 - 100
 			 */
 			int numberOfTries = 0;
+			//Счетчик попыток
+			int AllTries = 10;
+			//Тут мі задаем количество попыток
 			//System.out.println(theNumber);
 			//Теперь мы можем вывести на экран сгенерированное значение
 			int guess = 0;
 			// Добавили переменную, для хранения ответов пользователя
-			while (guess != theNumber) {
+			System.out.println("Угадайте случайное число в диапазоне от -100 до 100, за 10 попыток");
+			while (guess != theNumber && AllTries > 0) {
 				/*тело цикла должно находится в своих фигурных скобках, как и тело метода main
 				 * Цикл будет повторятся, пока значение переменной guess не будет равно theNumber
 				 */
-				System.out.println("Угадайте случайное число в диапазоне от -100 до 100:");
 				guess = scan.nextInt();
-				numberOfTries = numberOfTries + 1; 
+				numberOfTries = numberOfTries + 1;
+				AllTries = AllTries - 1;
 				if (guess < theNumber)
-					System.out.println("Ваш ответ " + guess + " меньше загаданного числа. И это Ваша " + numberOfTries + " попытка.");
+					System.out.println("Ваш ответ " + guess + " меньше загаданного числа. И это Ваша " + numberOfTries + " попытка. Осталось " + AllTries + " попыток");
 				else if (guess > theNumber)
-					System.out.println("Ваш ответ " + guess + " больше загаданного числа. И это Ваша " + numberOfTries + " попытка.");
+					System.out.println("Ваш ответ " + guess + " больше загаданного числа. И это Ваша " + numberOfTries + " попытка. Осталось "  + AllTries + " попыток");
 				else
 					System.out.println("Поздравляем, Вы угадали, число " + guess + " c " + numberOfTries + " попытки. Вы выиграли!"  );
 			}
