@@ -34,8 +34,8 @@ class HiLo {
 			 */
             int numberOfTries = 0;
             //Счетчик попыток
-            int AllTries = 5;
-            //Тут мы задаем количество попыток
+            int AllTries = 10;
+            //Тут мі задаем количество попыток
             //System.out.println(theNumber);
             //Теперь мы можем вывести на экран сгенерированное значение
             int guess = 0;
