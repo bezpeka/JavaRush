@@ -1,6 +1,12 @@
+import java.util.Scanner;
+
 public class Seasons {
     public static void main ( String[] args ) {
-        int month = 30;
+        Scanner scan = new Scanner ( System.in );
+        // Эта строка импортирует класс Scanner и все его функции из основного пакета утилит Java.
+        int month = 0;
+        System.out.println ( "Input number of month, please" );
+        month = scan.nextInt ( );
         // winter = 12, 1, 2
         // spring = 3, 4, 5
         // summer = 6, 7, 8
@@ -20,6 +26,7 @@ public class Seasons {
         else {
             System.out.println ( "Wrong data" );
         }
+        scan.close ( );
     }
 
 }
