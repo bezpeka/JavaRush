@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//Проверяем по номеру месяца, время года
 public
 class Seasons {
     public static
