@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
-public class Seasons {
-    public static void main ( String[] args ) {
+public
+class Seasons {
+    public static
+    void main ( String[] args ) {
         Scanner scan = new Scanner ( System.in );
         // Эта строка импортирует класс Scanner и все его функции из основного пакета утилит Java.
         int month = 0;
@@ -14,13 +16,13 @@ public class Seasons {
         if ( month == 12 || month == 1 || month == 2 ) {
             System.out.println ( "Winter" );
         }
-        else if ( month == 3 || month == 4 || month == 5 ) {
+        else if ( month >= 3 && month <= 5 ) {
             System.out.println ( "Spring" );
         }
-        else if ( month == 6 || month == 7 || month == 8 ) {
+        else if ( month >= 6 && month <= 8 ) {
             System.out.println ( "Summer" );
         }
-        else if ( month == 9 || month == 10 || month == 11 ) {
+        else if ( month >= 9 && month <= 11 ) {
             System.out.println ( "Autumn" );
         }
         else {
