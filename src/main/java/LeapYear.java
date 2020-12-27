@@ -14,11 +14,17 @@ public class LeapYear {
         int     year  = 0;
         System.out.println ( "Введите произвольный год, для проверки его на вискосоность" );
         year = scan.nextInt ( );
+        isLeapYear (year);
+        scan.close ( );
+    }
+    public static void isLeapYear(int year){
+
         if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
             System.out.println ( year + " год является високосным" );
         } else {
             System.out.println ( year + " год не является вискокосным" );
         }
-        scan.close ( );
+
     }
+
 }
