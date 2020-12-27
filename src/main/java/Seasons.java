@@ -1,9 +1,7 @@
 import java.util.Scanner;
 //Проверяем по номеру месяца, время года
-public
-class Seasons {
-    public static
-    void main ( String[] args ) {
+public class Seasons {
+    public static void main ( String[] args ) {
         Scanner scan = new Scanner ( System.in );
         // Эта строка импортирует класс Scanner и все его функции из основного пакета утилит Java.
         int month = 0;
