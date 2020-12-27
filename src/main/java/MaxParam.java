@@ -4,7 +4,7 @@
 public class MaxParam {
     public static void main ( String[] args ) {
         int par1 = 50;
-        int par2 = 10;
+        int par2 = 100;
         int result = getMax (par1, par2);
         System.out.println (result );
     }
