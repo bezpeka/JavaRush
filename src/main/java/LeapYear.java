@@ -17,12 +17,12 @@ public class LeapYear {
         isLeapYear (year);
         scan.close ( );
     }
-    public static void isLeapYear(int year){
+    public static boolean isLeapYear (int year){
 
         if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
-            System.out.println ( year + " год является високосным" );
+            return true;
         } else {
-            System.out.println ( year + " год не является вискокосным" );
+            return false;
         }
 
     }
