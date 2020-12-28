@@ -2,18 +2,17 @@ package com.servitant.TestExample;
 
 public class TestArray {
     public static void main ( String[] args ) {
-        /**Создаем новый массим типа int и размера 10
+        /** Создаем новый массим типа int и размера 10
          * Все значения в нем инициализируются нулями
          */
         int[] values = new int[10];
         //Выводим на экран значения нашего массива с указанием индекса
         for (int i = 0; i < values.length; i++) {
-            System.out.println (i + ":" + values[i]);
+            System.out.println ( i + ":" + values[i] );
         }
     }
 
     private static void test () {
-        int value = 10;
         /**   (индексы) 0, 1, 2, 3, 4
          *    Создаём массив values типа int, размера 5, с номерами ячеек         *
          */

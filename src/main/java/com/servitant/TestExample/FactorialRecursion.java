@@ -10,7 +10,7 @@ package com.servitant.TestExample;
 public class FactorialRecursion {
     public static void main ( String[] args ) {
         int factorial = factorial ( 15 );
-        System.out.println (factorial);
+        System.out.println ( factorial );
     }
 
     public static int factorial ( int value ) {

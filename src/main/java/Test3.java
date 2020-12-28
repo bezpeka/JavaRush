@@ -8,17 +8,17 @@ import java.util.Scanner;
 
 public class Test3 {
     public static void main ( String[] args ) {
-        Scanner scan  = new Scanner ( System.in );
-        int     value = 0;
+        Scanner scan = new Scanner ( System.in );
+        int value = 0;
         System.out.println ( "Input random value, please" );
-        value = scan.nextInt ( );
+        value = scan.nextInt ();
         if ( value % 10 == 3 ) {
             System.out.println ( "The last digit of the entered variable is 3" );
         }
         else {
             System.out.println ( "The last digit of the entered variable is not 3" );
         }
-        scan.close ( );
+        scan.close ();
     }
 
 }

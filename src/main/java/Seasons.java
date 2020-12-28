@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 //Проверяем по номеру месяца, время года
 public class Seasons {
     public static void main ( String[] args ) {
@@ -6,7 +7,7 @@ public class Seasons {
         // Эта строка импортирует класс Scanner и все его функции из основного пакета утилит Java.
         int month = 0;
         System.out.println ( "Input number of month, please" );
-        month = scan.nextInt ( );
+        month = scan.nextInt ();
         // winter = 12, 1, 2
         // spring = 3, 4, 5
         // summer = 6, 7, 8
@@ -26,7 +27,7 @@ public class Seasons {
         else {
             System.out.println ( "Wrong data" );
         }
-        scan.close ( );
+        scan.close ();
     }
 
 }

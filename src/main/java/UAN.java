@@ -8,9 +8,9 @@ import java.util.Scanner;
 public class UAN {
     public static void main ( String[] args ) {
         Scanner scan = new Scanner ( System.in );
-        int     UAN  = 0;
+        int UAN = 0;
         System.out.println ( "Input random value, please" );
-        UAN = scan.nextInt ( );
+        UAN = scan.nextInt ();
         /** 1,21,31,41,51,61,71,81,91,101... - гривна
          * (число заканчивается на 1, но не заканчивается на 11)
          */
@@ -30,6 +30,6 @@ public class UAN {
         else {
             System.out.println ( UAN + " гривен" );
         }
-        scan.close ( );
+        scan.close ();
     }
 }

@@ -2,12 +2,12 @@ package com.servitant.TestExample;
 
 public class cyclefor {
     public static void main ( String[] args ) {
-        TestFor ( );
+        TestFor ();
     }
 
     private static void TestFor () {
         for (int value = 0; value < 10; value++) {
-            System.out.println (value );
+            System.out.println ( value );
         }
     }
 }

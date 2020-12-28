@@ -6,7 +6,7 @@
 package com.servitant.TestExample;
 
 public class DigitSumm {
-    public static void main (String[] args) {
+    public static void main ( String[] args ) {
         int value = 12345634;
 
         int result = sum ( value );
@@ -16,7 +16,7 @@ public class DigitSumm {
         System.out.println ( result1 );
     }
 
-    public static int sum (int value) {
+    public static int sum ( int value ) {
         int result = 0;
         int currentValue = value;
         while (currentValue != 0) {
@@ -26,7 +26,7 @@ public class DigitSumm {
         return result;
     }
 
-    public static int sumFor (int value) {
+    public static int sumFor ( int value ) {
         int result = 0;
         for (int currentValue = value; currentValue != 0; currentValue /= 10) {
             result += currentValue % 10;
