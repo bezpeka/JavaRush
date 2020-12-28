@@ -29,7 +29,7 @@ public class DigitSumm {
     public static int sumFor (int value) {
         int result = 0;
         for (int currentValue = value; currentValue != 0; currentValue /= 10) {
-            result = currentValue % 10;
+            result += currentValue % 10;
         }
         return result;
     }
