@@ -37,6 +37,10 @@ import java.util.Scanner;
 
 public class CreditCalc{
     public static void main(String[] args){
+        CreditCalc();
+    }
+
+    public static void CreditCalc(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите сумму которую собираетесь одолжить");
         double dolg = scanner.nextInt();
