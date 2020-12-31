@@ -52,9 +52,6 @@ public class CreditCalc{
             dolg = dolg - (dolg * vernul / 100);
             System.out.println(dolg);
         }
-        double DoubleValue = dolg;
-        int IntValue = ( int ) DoubleValue;
-        System.out.println("Через " + srok + " месяцев, останется вернуть " + IntValue + " денег");
         scanner.close();
     }
 }
