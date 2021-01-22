@@ -10,7 +10,7 @@ public class brainstorm{
         int result = varplus(a, b, c);
         System.out.println(result);
     }
-        //создаем функцию (метод) сложения переменных
+    //создаем функцию (метод) сложения переменных
     public static int varplus(int var1, int var2, int var3){
         int res = var1 + var2 + var3;
         return res;
