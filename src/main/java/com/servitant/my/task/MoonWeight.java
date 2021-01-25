@@ -9,7 +9,8 @@ public class MoonWeight{
     }
 
     public static double getWeight(int earthWeight) {
-        double MoonWeight = earthWeight*17.00/100;//напишите тут ваш код
+        double MoonWeight = earthWeight*17.00/100;
+        //Если в формуле вместо 17.00 написать 17, то метод вернет значение не 150.96 а 150.00, почему?
         return MoonWeight;
     }
 }
