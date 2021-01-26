@@ -1,5 +1,10 @@
 package com.servitant.my.task;
-
+/* Это задача 2-й уровень, 10 лекция JR
+Как я понимаю, в зависимости от того,
+в какой последовательности мы передаем параметры создаваемого пользователя,
+выбирается соответствующий метод, с нужной последовательностью данных,
+по их типам, стринг, шорт, инт
+ */
 public class User{
 
     String name;
@@ -58,5 +63,4 @@ public class User{
         System.out.println(user5.name + " " + user5.age + " " + user5.height);
         System.out.println(user6.name + " " + user6.age + " " + user6.height);
     }
-}
 }
