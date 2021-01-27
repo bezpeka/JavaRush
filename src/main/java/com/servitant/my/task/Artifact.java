@@ -39,7 +39,7 @@ public class Artifact{
     public static void main(String[] args){
         Artifact artefact1 = new Artifact(1488);
         Artifact artefact2 = new Artifact(506, "Ассасины");
-        Artifact artefact3 = new Artifact(228, "Тамлиеры", 2019);
+        Artifact artefact3 = new Artifact(228, "Тамлиеры", 11);
 
         System.out.println(artefact1.number);
         System.out.println(artefact2.number + " " + artefact2.name);
