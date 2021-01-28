@@ -6,6 +6,7 @@ name зарабатывает $5,000. Ха-ха-ха!
 Пример:
 Тимур зарабатывает $5,000. Ха-ха-ха!
  */
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
