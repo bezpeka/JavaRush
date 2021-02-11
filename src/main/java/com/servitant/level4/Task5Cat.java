@@ -1,10 +1,10 @@
 package com.servitant.level4;
 
-public class Task7Cat {
+public class Task5Cat {
     private static int catsCount = 0;
 
     public static void setCatsCount (int catsCount) {
-        Task7Cat.catsCount = catsCount;//напишите тут ваш код
+        Task5Cat.catsCount = catsCount;//напишите тут ваш код
     }
 
     public static void main (String[] args) {
