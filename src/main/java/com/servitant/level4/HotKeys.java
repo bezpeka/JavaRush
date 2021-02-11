@@ -1,5 +1,4 @@
 package com.servitant.level4;
-
 public class HotKeys {
 
 /**     Поиск и замена
