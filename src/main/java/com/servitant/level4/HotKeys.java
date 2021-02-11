@@ -98,7 +98,7 @@ public class HotKeys {
  * Ctrl + Alt + F	        Помещение в поле
  * Ctrl + Alt + C	        Помещение в константу
  * Ctrl + Alt + P	        Помещение в параметр
-*/
+ */
 
 /**     Live template
  * Ctrl + Alt + J	        Окружить с «живым шаблоном»
@@ -111,7 +111,7 @@ public class HotKeys {
  * psf	                    Развертывание до public static final
  * thr	                    Развертывание до throw new
  * sout	                    Развертывание до System.out.println()
-*/
+ */
 
 /**     Работа с интерфейсом IDE
  * Alt + #[0-9]	            Открыть соответствующее окно инструмента
@@ -140,6 +140,6 @@ public class HotKeys {
  * Ctrl + F8	            Переключаем точку остановки
  * Ctrl + Shift + F8	    Показываем точки остановки
  */
-
+//TODO (ctrl + / + TODO) делают закладку
 }
 

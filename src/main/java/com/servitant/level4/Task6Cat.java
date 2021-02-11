@@ -26,3 +26,5 @@ public class Task6Cat {
     public static void main (String[] args) {
     }
 }
+//TODO: Задача решена правильно, но не смог вывести значение fullName
+// на экран для проверки, через sout. разобраться как это сделать?
