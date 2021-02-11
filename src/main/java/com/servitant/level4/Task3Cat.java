@@ -1,10 +1,11 @@
 package com.servitant.level4;
+
 //Task 3 Помогите коту обрести имя с помощью метода setName.
-public class Cat {
+public class Task3Cat {
     private String name = "безымянный кот";
 
     public void setName (String name) {
-        this.name=name;//напишите тут ваш код
+        this.name = name;//напишите тут ваш код
 /*
 Имя.из.класса = переданное имя
 переданное имя, это то которое приходит в сетНейм в скобочках,
@@ -26,8 +27,8 @@ public class Cat {
     }
 
     public static void main (String[] args) {
-        Cat cat = new Cat ();
-        cat.setName ("Жужик");
-        System.out.println (cat.name);
+        Task3Cat task3Cat = new Task3Cat ();
+        task3Cat.setName ("Жужик");
+        System.out.println (task3Cat.name);
     }
 }
