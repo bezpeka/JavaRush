@@ -19,7 +19,7 @@ public class LeapYear {
         year = scan.nextInt ();
         isLeapYear ( year );
         scan.close ();
-        //Две строчки ниже - віводят результат true или false в консоль
+        //Две строчки ниже - выводят результат true или false в консоль
         boolean result = isLeapYear ( year );
         System.out.println ( result );
     }
