@@ -32,14 +32,17 @@ package com.javarush.task.task04.task0429;
 public class Task24 {
     public static void main (String[] args) throws Exception {
         //напишите тут ваш код
-        System.out.println ("Введите с клавиатуры три целых числа");
+        System.out.println ("Введите с клавиатуры шесть целых чисел");
         BufferedReader reader = new BufferedReader (new InputStreamReader (System.in));
         int a = Integer.parseInt (reader.readLine ());
         int b = Integer.parseInt (reader.readLine ());
         int c = Integer.parseInt (reader.readLine ());
+        int d = Integer.parseInt (reader.readLine ());
+        int e = Integer.parseInt (reader.readLine ());
+        int f = Integer.parseInt (reader.readLine ());
         int count = 0;
         int count1 = 0;
-        int[] mass = new int[]{a, b, c};
+        int[] mass = new int[]{a, b, c, d, e, f};
         for (int i = 0; i < mass.length; i++){
             if (mass[i] > 0){
                 count++;
