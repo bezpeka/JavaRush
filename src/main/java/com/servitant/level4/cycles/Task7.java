@@ -15,7 +15,7 @@ package com.javarush.task.task04.task0436;
  */
 public class Task7 {
     public static void main (String[] args) throws Exception{
-        System.out.println ("Введите с клавиатуры строку и число");
+        System.out.println ("Введите с клавиатуры два числа");
         BufferedReader reader = new BufferedReader (new InputStreamReader (System.in));
         int m = Integer.parseInt (reader.readLine ());
         int n = Integer.parseInt (reader.readLine ());
