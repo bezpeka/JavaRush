@@ -1,4 +1,4 @@
-package com.servitant.level4;
+package com.servitant.level4.task1to25;
 
 /*
 Время года

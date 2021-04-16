@@ -1,4 +1,4 @@
-package com.servitant.level4;
+package com.servitant.level4.task1to25;
 
 // TODO: 28.01.21 разобраться с переменными классов, тут вот вообще не понял задание 
 /*

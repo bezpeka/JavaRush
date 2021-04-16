@@ -1,9 +1,9 @@
-package com.servitant.level4;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
+package com.servitant.level4.task1to25;
 /*
+
+Переходим дорогу вслепую
+package com.javarush.task.task04.task0416;
+
 Работа светофора для пешеходов запрограммирована следующим образом:
 в начале каждого часа в течение трех минут горит зелёный сигнал,
 затем в течение одной минуты - жёлтый,
@@ -16,13 +16,25 @@ import java.io.InputStreamReader;
 "жёлтый" - если горит жёлтый цвет,
 "красный" - если горит красный цвет.
 
-package com.javarush.task.task04.task0414
+Пример для числа 2.5:
+зелёный
+
+Пример для числа 3:
+жёлтый
+
+Пример для числа 4:
+красный
+
+Пример для числа 5:
+зелёный
  */
 
-public class Task9 {
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Task11 {
     public static void main (String[] args) throws Exception {
         //напишите тут ваш код
-        System.out.println ("Введите с клавиатуры число t");
         BufferedReader reader = new BufferedReader (new InputStreamReader (System.in));
         double t = Double.parseDouble (reader.readLine ());
         double a = t % 5;

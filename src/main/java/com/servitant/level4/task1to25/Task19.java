@@ -1,4 +1,4 @@
-package com.servitant.level4;
+package com.servitant.level4.task1to25;
 /*
 Три числа
 package com.javarush.task.task04.task0424;

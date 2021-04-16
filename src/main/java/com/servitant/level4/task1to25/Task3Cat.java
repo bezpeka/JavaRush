@@ -1,4 +1,4 @@
-package com.servitant.level4;
+package com.servitant.level4.task1to25;
 
 //Task 3 Помогите коту обрести имя с помощью метода setName.
 public class Task3Cat {
