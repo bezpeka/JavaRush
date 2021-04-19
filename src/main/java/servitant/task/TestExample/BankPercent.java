@@ -6,7 +6,7 @@
  * <p>
  * Как и ранее, одна и та же задача решена двумя способами и циклом FOR и циклом WHILE
  */
-package com.javarush.TestExample;
+package servitant.task.TestExample;
 
 public class BankPercent {
 

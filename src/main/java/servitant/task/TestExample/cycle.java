@@ -1,4 +1,4 @@
-package com.javarush.TestExample;
+package servitant.task.TestExample;
 
 public class cycle {
     public static void main ( String[] args ) {

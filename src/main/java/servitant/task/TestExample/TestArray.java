@@ -1,4 +1,4 @@
-package com.javarush.TestExample;
+package servitant.task.TestExample;
 
 public class TestArray {
     public static void main ( String[] args ) {

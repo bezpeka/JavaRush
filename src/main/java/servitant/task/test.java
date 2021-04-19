@@ -1,4 +1,4 @@
-package com.javarush.my.task;
+package servitant.task;
 
 public class test{
     public static void main(String[] args) {

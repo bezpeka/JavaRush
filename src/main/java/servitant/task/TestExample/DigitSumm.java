@@ -3,7 +3,7 @@
  * Так же делаем на двух циклах и FOR и WHILE
  */
 
-package com.javarush.TestExample;
+package servitant.task.TestExample;
 
 public class DigitSumm {
     public static void main ( String[] args ) {

@@ -1,4 +1,4 @@
-package com.javarush.my.task;
+package servitant.task;
 
 public class brainstorm{
     public static void main(String[] args){

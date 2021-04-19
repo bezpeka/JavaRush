@@ -3,7 +3,7 @@
  * алфавиту, начиная с буквы ‘b’, и выводит каждую букву до тех пор,
  * пока не встретит гласную (т.е. вывести согласные на консоль).
  */
-package com.javarush.TestExample;
+package servitant.task.TestExample;
 
 public class Alphabet {
 

@@ -5,7 +5,7 @@
  * https://www.youtube.com/watch?v=VLAe_qy5seU&list=PLnh8EajVFTl6KGYdCWTlHdYPvpuqaBCTf&index=13
  * Автор рекомендует не использовать рекурсию, но понимать что это такое, на случай встречи ее в коде.
  */
-package com.javarush.TestExample;
+package servitant.task.TestExample;
 
 public class FactorialRecursion {
     public static void main ( String[] args ) {

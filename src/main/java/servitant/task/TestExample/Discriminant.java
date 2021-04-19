@@ -12,7 +12,7 @@
  * - функция discriminant, вычисляющая дискриминант
  */
 
-package com.javarush.TestExample;
+package servitant.task.TestExample;
 
 import java.util.Scanner;
 

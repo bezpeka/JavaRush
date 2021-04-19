@@ -1,4 +1,4 @@
-package com.javarush.my.task;
+package servitant.task;
 /*
 Музей древностей. 2-й уровень, 10 лекция JR
 Твоя задача — спроектировать класс Artifact.

@@ -31,7 +31,7 @@
  * Остаток долга: 10628
  */
 
-package com.javarush.my.task;
+package servitant.task;
 
 import java.util.Scanner;
 

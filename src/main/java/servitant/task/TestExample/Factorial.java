@@ -3,7 +3,7 @@
  * Написать программу высчитывающую факториал введённого целого числа.
  * Пример 1*2*3*4*5*6=6!
  */
-package com.javarush.TestExample;
+package servitant.task.TestExample;
 
 public class Factorial {
     public static void main ( String[] args ) {

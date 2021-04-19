@@ -1,4 +1,4 @@
-package com.javarush.my.task;
+package servitant.task;
 
 public class divsum{
     public static void main(String[] args){

@@ -3,7 +3,7 @@
  * целое число простым, т.е. делится без остатка только на 1 и само
  * на себя.
  */
-package com.javarush.TestExample;
+package servitant.task.TestExample;
 
 public class PrimeNumber {
 

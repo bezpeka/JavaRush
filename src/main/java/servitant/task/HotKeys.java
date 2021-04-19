@@ -1,4 +1,4 @@
-package com.javarush.task;
+package servitant.task;
 public class HotKeys {
 
 /**     Поиск и замена

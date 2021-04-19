@@ -7,7 +7,7 @@
  * функцию.
  */
 
-package com.javarush.TestExample;
+package servitant.task.TestExample;
 
 import java.util.Scanner;
 
