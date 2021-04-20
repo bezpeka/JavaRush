@@ -1,11 +1,10 @@
-package com.javarush.task.task05.task0513;
-
+package com.javarush.task.task05.task0520;
 /*
 Собираем прямоугольник
 
 Создать класс прямоугольник (Rectangle). Его данными будут top, left, width, height
 (верхняя координата, левая, ширина и высота).
-Создать для него как можно больше методов initialize(...)
+Создать для него как можно больше конструкторов.
 
 Примеры:
 - заданы 4 параметра: left, top, width, height
@@ -21,28 +20,28 @@ public class Rectangle {
     int width = 0;
     int height = 0;
 
-    public void initialize (int top, int left, int width, int height) {
+    public Rectangle (int top, int left, int width, int height) {
         this.top = top; //заданы 4 параметра: left, top, width, height
         this.left = left;
         this.width = width;
         this.height = height;
     }
 
-    public void initialize (int top, int left) {
+    public Rectangle (int top, int left) {
         this.top = top; //ширина/высота не задана (оба равны 0)
         this.left = left;
         this.width = width;
         this.height = height;
     }
 
-    public void initialize (int top, int left, int width) {
+    public Rectangle (int top, int left, int width) {
         this.top = top; //высота не задана (равно ширине) создаём квадрат
         this.left = left;
         this.width = width;
         this.height = width;
     }
 
-    public void initialize () {
+    public Rectangle () {
         this.top = top; //создаём копию другого прямоугольника (он и передаётся в параметрах)
         this.left = left;
         this.width = 10;
