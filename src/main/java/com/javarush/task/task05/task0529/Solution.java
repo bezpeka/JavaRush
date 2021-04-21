@@ -22,14 +22,20 @@ while (true)
 */
 
 public class Solution {
-    public static void main(String[] args) throws Exception {
+    public static void main (String[] args) throws Exception {
         //напишите тут ваш код
-        BufferedReader buffer = new BufferedReader(new InputStreamReader(System.in));
-        while (true)
-        {
-            String s = buffer.readLine();
-            if (s.equals("сумма"))
+        BufferedReader buffer = new BufferedReader (new InputStreamReader (System.in));
+        int sum = 0;                                //создаем переменную для вывода резудьтата
+        while (true) {
+            String word = buffer.readLine ();       //считываем введенные даные
+            if (word.equals ("сумма")){             //сравниваем с заданым значением
+                System.out.println (sum);           //если совпало, печатаем результат и выходим из программы
                 break;
+            }
+            else {                                  //иначе, если не совпало
+                int num = Integer.parseInt (word);  //парсим из считанного значеия число
+                sum += num;                         //добавляем считанное значение к результату
+            }
         }
     }
 }
