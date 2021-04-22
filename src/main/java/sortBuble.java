@@ -1,5 +1,3 @@
-package com.javarush.task;
-
 public class sortBuble {
     static void bubbleSort (int[] arr) {
         int n = arr.length;
