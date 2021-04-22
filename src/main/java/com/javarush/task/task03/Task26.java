@@ -13,9 +13,9 @@ import java.io.InputStreamReader;
  */
 public class Task26 {
     public static void main (String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader (System.in));
-        String name = reader.readLine();
-        int n = Integer.parseInt(name);
+        BufferedReader reader = new BufferedReader (new InputStreamReader (System.in));
+        String name = reader.readLine ();
+        int n = Integer.parseInt (name);
         System.out.println ("Я буду зарабатывать $" + n + " в час");
     }
 }

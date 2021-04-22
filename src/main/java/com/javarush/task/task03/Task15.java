@@ -1,6 +1,6 @@
 package com.javarush.task.task03;
 
-public class Task15{
+public class Task15 {
 /*
 Каждый охотник желает знать…
 
@@ -16,55 +16,55 @@ Violet
 Каждый объект при создании выводит на экран определенный цвет.
 */
 
-    public static void main(String[] args){
-        Red red = new Red();
-        Orange orange = new Orange();
-        Yellow yellow = new Yellow();
-        Green green = new Green();
-        Blue blue = new Blue();
-        Indigo indigo = new Indigo();
-        Violet violet = new Violet();
+    public static void main (String[] args) {
+        Red red = new Red ();
+        Orange orange = new Orange ();
+        Yellow yellow = new Yellow ();
+        Green green = new Green ();
+        Blue blue = new Blue ();
+        Indigo indigo = new Indigo ();
+        Violet violet = new Violet ();
     }
 
-    public static class Red{
-        public Red(){
-            System.out.println("Red");
+    public static class Red {
+        public Red () {
+            System.out.println ("Red");
         }
     }
 
-    public static class Orange{
-        public Orange(){
-            System.out.println("Orange");
+    public static class Orange {
+        public Orange () {
+            System.out.println ("Orange");
         }
     }
 
-    public static class Yellow{
-        public Yellow(){
-            System.out.println("Yellow");
+    public static class Yellow {
+        public Yellow () {
+            System.out.println ("Yellow");
         }
     }
 
-    public static class Green{
-        public Green(){
-            System.out.println("Green");
+    public static class Green {
+        public Green () {
+            System.out.println ("Green");
         }
     }
 
-    public static class Blue{
-        public Blue(){
-            System.out.println("Blue");
+    public static class Blue {
+        public Blue () {
+            System.out.println ("Blue");
         }
     }
 
-    public static class Indigo{
-        public Indigo(){
-            System.out.println("Indigo");
+    public static class Indigo {
+        public Indigo () {
+            System.out.println ("Indigo");
         }
     }
 
-    public static class Violet{
-        public Violet(){
-            System.out.println("Violet");
+    public static class Violet {
+        public Violet () {
+            System.out.println ("Violet");
         }
     }
 }

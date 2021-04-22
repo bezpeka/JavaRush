@@ -13,7 +13,7 @@ http://proglang.su/java/date-and-time
 */
 
 public class Solution {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         //напишите тут ваш код
         Date date = new Date ();
         SimpleDateFormat formatForDateNow = new SimpleDateFormat ("dd MM yyyy");

@@ -3,11 +3,11 @@ package com.javarush.task.task04.cycles;
 import java.util.Scanner;
 
 public class Task12v1 {
-    public static void main ( String[] args ) {
-        Scanner in = new Scanner ( System.in );
+    public static void main (String[] args) {
+        Scanner in = new Scanner (System.in);
         int x = in.nextInt (), y = in.nextInt (), z = in.nextInt ();
 
-        System.out.println ( x > y ? x > z ? y > z ? y : z : x : x > z ? x : z > y ? y : z );
+        System.out.println (x > y ? x > z ? y > z ? y : z : x : x > z ? x : z > y ? y : z);
         //Тернарная операция
     }
 }

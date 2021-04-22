@@ -8,12 +8,12 @@ package com.javarush.task.task03;
 Пример:
 Метод getMetreFromCentimetre вызывается с параметром 243, результат: 2.
  */
-public class Task24{
-    public static void main(String[] args){
-        System.out.println(getMetreFromCentimetre(243));
+public class Task24 {
+    public static void main (String[] args) {
+        System.out.println (getMetreFromCentimetre (243));
     }
 
-    public static int getMetreFromCentimetre(int centimetre){
+    public static int getMetreFromCentimetre (int centimetre) {
         return centimetre / 100;
     }
 }

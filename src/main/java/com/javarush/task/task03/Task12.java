@@ -1,6 +1,6 @@
 package com.javarush.task.task03;
 
-public class Task12{
+public class Task12 {
     /*
     Набираем воду в бассейн
 Амиго, сегодня наша задача наполнить корабельный бассейн.
@@ -13,11 +13,11 @@ public class Task12{
 Метод getVolume вызывается с параметрами 25, 5, 2.
 Пример вывода: 250000
 */
-    public static void main(String[] args){
-        System.out.println(getVolume(25, 5, 2));
+    public static void main (String[] args) {
+        System.out.println (getVolume (25, 5, 2));
     }
 
-    public static long getVolume(int a, int b, int c){
+    public static long getVolume (int a, int b, int c) {
         return ( long ) a * b * c * 1000;//напишите тут ваш код
     }
 }

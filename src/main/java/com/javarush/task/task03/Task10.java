@@ -1,6 +1,6 @@
 package com.javarush.task.task03;
 
-public class Task10{
+public class Task10 {
 
 /*
 Печатаем строки
@@ -14,12 +14,12 @@ printing: Hello world!
 */
 
 
-    public static void main(String[] args){
-        writeToConsole("Hello world!");
+    public static void main (String[] args) {
+        writeToConsole ("Hello world!");
     }
 
-    public static void writeToConsole(String s){
-        System.out.println("printing: " + s);//напишите тут ваш код
+    public static void writeToConsole (String s) {
+        System.out.println ("printing: " + s);//напишите тут ваш код
 
     }
 }

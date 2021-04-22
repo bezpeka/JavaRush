@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="HiLo" />
+        <module name="JavaRush" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="HiLo" target="8" />
+      <module name="JavaRush" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

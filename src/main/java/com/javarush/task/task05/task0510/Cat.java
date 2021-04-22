@@ -52,7 +52,8 @@ public class Cat {
         this.weight = weight;
         this.age = age;
     }
-    public void initialize ( int weight, String color, String address){
+
+    public void initialize (int weight, String color, String address) {
         this.weight = weight; //вес, цвет, адрес (чужой домашний кот)
         this.color = color;
         this.address = address;

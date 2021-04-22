@@ -1,4 +1,5 @@
 package com.javarush.task.task03;
+
 /*3-й уровень 3-я лекция
 Три приведённых примера эквивалентны.
 Все  объекты в Java могут быть преобразованы в строку.
@@ -12,10 +13,10 @@ package com.javarush.task.task03;
 Поэтому консоль выводит что-то типа этого
 Cat is com.servitant.level3.toString$Cat@1b6d3586
  */
-public class toString{
-    public static void main(String[] args){
-        Cat cat = new Cat();
-        System.out.println("Cat is " + cat);
+public class toString {
+    public static void main (String[] args) {
+        Cat cat = new Cat ();
+        System.out.println ("Cat is " + cat);
     }
 
 //    public static void main(String[] args){
@@ -29,7 +30,7 @@ public class toString{
 //        System.out.println("Cat is " + catText);
 //    }
 
-    public static class Cat{
+    public static class Cat {
 
     }
 }

@@ -1,4 +1,5 @@
 package com.javarush.task.task03;
+
 /*
 Экранирование символов.
 
@@ -12,9 +13,9 @@ It's Java string: \"C:\\Program Files\\Java\\jdk1.7.0\\bin\"
 
 Больше про экранирование символов и Escape-последовательности в Java читай в книгах.
  */
-public class Task16{
-    public static void main(String[] args){
-        System.out.println("It's Windows path: \"C:\\Program Files\\Java\\jdk1.7.0\\bin\"");
-        System.out.println("It's Java string: \\\"C:\\\\Program Files\\\\Java\\\\jdk1.7.0\\\\bin\\\"");
+public class Task16 {
+    public static void main (String[] args) {
+        System.out.println ("It's Windows path: \"C:\\Program Files\\Java\\jdk1.7.0\\bin\"");
+        System.out.println ("It's Java string: \\\"C:\\\\Program Files\\\\Java\\\\jdk1.7.0\\\\bin\\\"");
     }
 }

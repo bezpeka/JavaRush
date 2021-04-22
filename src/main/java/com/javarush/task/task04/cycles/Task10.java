@@ -2,6 +2,7 @@ package com.javarush.task.task04.cycles;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+
 /*
 Письмо счастья
 package com.javarush.task.task04.task0439;

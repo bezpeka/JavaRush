@@ -1,4 +1,5 @@
 package com.javarush.task.task04.cycles;
+
 /*
 Вывести на экран таблицу умножения 10х10 используя цикл while.
 Числа разделить пробелом.
@@ -21,7 +22,7 @@ public class Task5 {
         int y = 1;
         while (y <= 10) {
             while (x <= 10) {
-                System.out.print (x*y+" ");
+                System.out.print (x * y + " ");
                 x++;
             }
             System.out.println ();
