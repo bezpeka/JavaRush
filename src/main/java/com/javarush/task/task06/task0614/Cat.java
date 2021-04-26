@@ -12,20 +12,20 @@ import java.util.ArrayList;
 
 public class Cat {
     //напишите тут ваш код
-    public static ArrayList<Cat> cats = new ArrayList <Cat> ();
+    public static ArrayList < Cat > cats = new ArrayList < Cat > ();
 
-    public Cat() {
+    public Cat () {
     }
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         //напишите тут ваш код
         for (int i = 0; i < 10; i++){
-            cats.add (new Cat());
+            cats.add (new Cat ());
         }
-        printCats();
+        printCats ();
     }
 
-    public static void printCats() {
+    public static void printCats () {
         //напишите тут ваш код
         for (Cat cat : cats){ //WTF - Почитайте о цикле for each.
             System.out.println (cat);

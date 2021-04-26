@@ -6,14 +6,14 @@ KissMyShinyMetalAss
 */
 
 public class Solution {
-    public static class KissMyShinyMetalAss{
+    public static class KissMyShinyMetalAss {
 
     }
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         //напишите тут ваш код
-        KissMyShinyMetalAss robot = new KissMyShinyMetalAss();
-        System.out.println(robot);
+        KissMyShinyMetalAss robot = new KissMyShinyMetalAss ();
+        System.out.println (robot);
     }
 }                                                  
                                                   

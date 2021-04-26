@@ -38,33 +38,36 @@ public class Solution {
     //    вне зависимости от создания объектов типа Solution:
     public static int step;
 
-    public static void main(String[] args) {
-        method1();
+    public static void main (String[] args) {
+        method1 ();
     }
+
     // 1. Поскольку method1() вызывается из статического метода main() без создания объекта,
     //    method1() также должен быть статическим:
-    public static void method1() {
-        method2();
+    public static void method1 () {
+        method2 ();
     }
+
     // 2. Из-за того, что method1() теперь статический, method2() также должен быть статическим,
     //    чтобы его можно было вызвать в теле метода method1() (по аналогии с п.1):
-    public static void method2() {
-        new Solution().method3();
+    public static void method2 () {
+        new Solution ().method3 ();
     }
+
     //Теперь метод method3( ) также вызывается из статического контекста
     //(из метода method2( ) ), но он вызывается не напрямую,
     //а посредством создаваемого объекта new Solution( ).
-    public void method3() {
-        method4();
+    public void method3 () {
+        method4 ();
     }
 
-    public void method4() {
+    public void method4 () {
         step++;
-        for (StackTraceElement element : Thread.currentThread().getStackTrace())
-            System.out.println(element);
+        for (StackTraceElement element : Thread.currentThread ().getStackTrace ())
+            System.out.println (element);
         if (step > 1)
             return;
-        main(null);
+        main (null);
     }
 }
-                             
+//TODO Вроде описано подробно, но не понял, разобрать
