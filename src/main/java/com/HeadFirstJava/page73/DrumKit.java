@@ -1,4 +1,4 @@
-package com.HeadFirstJava.page76;
+package com.HeadFirstJava.page73;
 
 public class DrumKit {
     boolean topHat = true;
