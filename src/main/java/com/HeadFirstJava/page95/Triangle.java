@@ -6,9 +6,9 @@ public class Triangle {
     int length;
 
     public static void main (String[] args) {
+        Triangle[] ta = new Triangle[4];
         int x = 0;
         int y = x;
-        Triangle[] ta = new Triangle[4];
         while (x < 4) {
             ta[x] = new Triangle ();
             ta[x].height = (x + 1) * 2;
