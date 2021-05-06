@@ -7,8 +7,8 @@ public class Clock {
         time = t;
     }
 
-    String getTime () { //Тут не хватало String
-        return time;
+    String getTime () { //Тут не хватало String,
+        return time; // геттер в своем объявлении должен содержать тип возвращаемого значения
     }
 }
 
