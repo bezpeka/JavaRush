@@ -1,4 +1,4 @@
-package com.HeadFirstJava.page118;
+package com.HeadFirstJava.page100to199.page118;
 
 public class XCopy {
     public static void main (String[] args) {
