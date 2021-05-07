@@ -1,18 +1,18 @@
 package com.HeadFirstJava.Game.DotComBust;
 
-public class SimpleDotComTestDrive {
+public class SimpleDotComTestDrive { //Создаем тестовый класс, для проверки нашего основного класса
     public static void main (String[] args) {
-        SimpleDotCom dot = new SimpleDotCom ();
+        SimpleDotCom dot = new SimpleDotCom (); //Создаем ссылку на новый екземпляр нашего основного класса
 
-        int[] locations = {2, 3, 4};
-        dot.setLocationCells (locations);
+        int[] locations = {2, 3, 4}; //задаем координаты нашего кораблика (морской бой)
+        dot.setLocationCells (locations); //вызываем метод из нашего основного класса
 
-        String userGuess = "2";
-        String result = dot.checkYourself (userGuess);
-//        String testResult = "Неудача";
-//        if (result.equals ("Попал")){
-//            testResult = "Пройден";
-//        }
-//        System.out.println (testResult);
+        String userGuess = "2"; //задаем точку выстрела
+        String result = dot.checkYourself (userGuess); // проверяем попадаение
+        String testResult = "Неудача";
+        if (result.equals ("Попал")){
+            testResult = "Пройден";
+        }
+        System.out.println (testResult); // выводим результат
     }
 }
