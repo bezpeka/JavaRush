@@ -11,10 +11,10 @@ public class DotCom {
         locationCells = loc;
     }
 
-    public String checkYourself (String stringGuess) { //метод проверки попадания
-//        int guess = Integer.parseInt (stringGuess); // считаваем данные пользователя (строку), парсим в инт
+    public String checkYourself (String userinput) { //метод проверки попадания
+//        int guess = Integer.parseInt (userinput); // считаваем данные пользователя (строку), парсим в инт
         String result = "Мимо"; // сразу присваиваем результату значение мимо
-        int index = locationCells.indexOf (stringGuess);
+        int index = locationCells.indexOf (userinput);
         if (index >= 0){
             locationCells.remove (index);
             if (locationCells.isEmpty ()){
