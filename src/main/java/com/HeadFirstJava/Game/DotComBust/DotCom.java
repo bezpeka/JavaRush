@@ -12,9 +12,9 @@ public class DotCom {
     }
 
     public String checkYourself (String stringGuess) { //метод проверки попадания
-        int guess = Integer.parseInt (stringGuess); // считаваем данные пользователя (строку), парсим в инт
+//        int guess = Integer.parseInt (stringGuess); // считаваем данные пользователя (строку), парсим в инт
         String result = "Мимо"; // сразу присваиваем результату значение мимо
-        int index = locationCells.indexOf (userInput);
+        int index = locationCells.indexOf (stringGuess);
         if (index >= 0){
             locationCells.remove (index);
             if (locationCells.isEmpty ()){
