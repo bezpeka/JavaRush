@@ -9,10 +9,10 @@ public class SimpleDotCom { // создали рабочий класс
     }
 
     public String checkYourself (String stringGuess) { //метод проверки попадания
-        int guess = Integer.parseInt (stringGuess); // считаваем данные пользователя, парсим в инт
+        int guess = Integer.parseInt (stringGuess); // считаваем данные пользователя (строку), парсим в инт
         String result = "Мимо"; // сразу присваиваем результату значение мимо
-        for (int cell : locationCells){ // todo разобраться с таким способом написания цикла for
-            if (guess == cell){
+        for (int cell : locationCells){ // Повторяем это с каждым элементом массива
+            if (guess == cell){ //Проверяем попадание
                 result = "Попал";
                 numofHits++;
                 break;
@@ -22,6 +22,6 @@ public class SimpleDotCom { // создали рабочий класс
             result = "Потопил";
         }
         System.out.println (result);
-        return result;
+        return result; // возвращаем результат в вызывающий метода
     }
 }
