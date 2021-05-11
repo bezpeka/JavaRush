@@ -4,10 +4,14 @@ import java.util.ArrayList;
 
 public class DotCom {
     private ArrayList < String > locationCells; //массив для хранения координатов кораблей
-    int numofHits = 0; // количество попаданий
+    private String name;
 
     public void setLocationCells (ArrayList < String > loc) { //метод для установки координат корабля в массив (сеттер)
         locationCells = loc;
+    }
+
+    public void setName(String n){
+        name = n;
     }
 
     public String checkYourself (String userinput) { //метод проверки попадания
@@ -15,8 +19,10 @@ public class DotCom {
         int index = locationCells.indexOf (userinput);
         if (index >= 0){
             locationCells.remove (index);
+
             if (locationCells.isEmpty ()){
                 result = "Потопил";
+                System.out.println ("Ой! Вы потопили "+ name + " :( ");
             }
             else {
                 result = "Попал";

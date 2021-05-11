@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//todo Нужно переписать этот класс 181 стр
+
 public class GameHelper {
     public String getUserInput (String prompt) {
         String inputLine = null;
