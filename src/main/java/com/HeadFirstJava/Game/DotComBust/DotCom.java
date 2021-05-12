@@ -10,7 +10,7 @@ public class DotCom {
         locationCells = loc;
     }
 
-    public void setName(String n){
+    public void setName (String n) {
         name = n;
     }
 
@@ -22,7 +22,7 @@ public class DotCom {
 
             if (locationCells.isEmpty ()){
                 result = "Потопил";
-                System.out.println ("Ой! Вы потопили "+ name + " :( ");
+                System.out.println ("Ой! Вы потопили " + name + " :( ");
             }
             else {
                 result = "Попал";

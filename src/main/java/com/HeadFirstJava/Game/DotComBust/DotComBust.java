@@ -9,11 +9,11 @@ public class DotComBust {
 
     private void setUpGame () {
         DotCom one = new DotCom ();
-        o.setName ("Pets.com");
+        one.setName ("Pets.com");
         DotCom two = new DotCom ();
-        o.setName ("eToys.com");
+        two.setName ("eToys.com");
         DotCom three = new DotCom ();
-        o.setName ("Go2.com");
+        three.setName ("Go2.com");
         dotComsList.add (one);
         dotComsList.add (two);
         dotComsList.add (three);
