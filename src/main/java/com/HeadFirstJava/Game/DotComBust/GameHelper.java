@@ -5,8 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-//todo Нужно переписать этот класс 181 стр
-
 public class GameHelper {
     private static final String alphabet = "abcdefg";
     private int gridLength = 7;
