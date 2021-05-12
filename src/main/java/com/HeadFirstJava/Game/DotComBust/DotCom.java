@@ -29,6 +29,6 @@ public class DotCom {
             }
         }
         System.out.println (result);
-        return result; // возвращаем результат в вызывающий метода
+        return result; // возвращаем результат в вызывающий метод
     }
 }
