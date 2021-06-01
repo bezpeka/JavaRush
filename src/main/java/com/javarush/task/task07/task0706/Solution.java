@@ -14,7 +14,6 @@ import java.util.Scanner;
 Примечание:
 дом с порядковым номером 0 считать четным.
 */
-
 public class Solution {
     public static void main (String[] args) throws IOException {
         //напишите тут ваш код
