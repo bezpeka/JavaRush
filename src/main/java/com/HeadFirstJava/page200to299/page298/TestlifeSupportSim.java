@@ -12,3 +12,4 @@ public class TestlifeSupportSim {
         }
     }
 }
+//todo очередная задача, где я нихера не понял
