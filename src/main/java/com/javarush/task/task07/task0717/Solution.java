@@ -6,6 +6,12 @@ import java.util.ArrayList;
 
 /* 
 Удваиваем слова
+1. Введи с клавиатуры 10 слов в список строк.
+
+2. Метод doubleValues должен удваивать слова по принципу:
+"альфа", "бета", "гамма" -> "альфа", "альфа", "бета", "бета", "гамма", "гамма"
+
+3. Выведи результат на экран, каждое значение с новой строки.
 */
 
 public class Solution {
@@ -13,16 +19,16 @@ public class Solution {
         // Считать строки с консоли и объявить ArrayList list тут
 
         ArrayList <String> list = new ArrayList<>();
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader inputsWord = new BufferedReader(new InputStreamReader(System.in));
         for (int i=0; i<10; i++) {
-            list.add(br.readLine());
+            list.add(inputsWord.readLine());
         }
 
         ArrayList<String> result = doubleValues(list);
 
         // Вывести на экран result
-        for (String s: result) {
-            System.out.println(s);
+        for (String items: result) {
+            System.out.println(items);
         }
     }
 

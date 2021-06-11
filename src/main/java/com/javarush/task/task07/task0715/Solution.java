@@ -16,15 +16,11 @@ public class Solution {
         list.add("мама");
         list.add("мыла");
         list.add("раму");
-
         list.add(1, "именно");
         list.add(3, "именно");
         list.add("именно");
-
-        for(String item: list) {
-            System.out.println(item);
+        for(String element: list) {
+            System.out.println(element);
         }
-
-
     }
 }
