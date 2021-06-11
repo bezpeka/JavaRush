@@ -8,4 +8,9 @@ public class Cat extends Animal implements run{
     public void runs(){
         System.out.println("Cat is running");
     }
+
+    @Override
+    public void swims() {
+        System.out.println("Cat is not swimming");
+    }
 }

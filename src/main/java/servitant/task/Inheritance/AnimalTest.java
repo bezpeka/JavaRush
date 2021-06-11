@@ -9,5 +9,7 @@ public class AnimalTest {
         sharik.runs();
         murka.sleep();
         Noname.eat();
+        sharik.swims();
+        murka.swims();
     }
 }
