@@ -7,25 +7,27 @@ import java.util.ArrayList;
 
 /* 
 Это конец
+Создать список строк.
+Ввести строки с клавиатуры и добавить их в список.
+Вводить с клавиатуры строки, пока пользователь не введет строку "end". Саму строку "end" не учитывать.
+Вывести строки на экран, каждую с новой строки.
 */
 
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<String> lst = new ArrayList <>();
+        ArrayList <String> list = new ArrayList <>();
 
-        String s="";
+        String userInput = "";
         while (true) {
-            s = reader.readLine();
-            if (s.equals("end"))
+            userInput = reader.readLine();
+            if(userInput.equals("end"))
                 break;
-            lst.add(s);
+            list.add(userInput);
         }
-
-        for (String s1: lst) {
-            System.out.println(s1);
+        for(String itemUserInput: list) {
+            System.out.println(itemUserInput);
         }
-
         //напишите тут ваш код
     }
 }
