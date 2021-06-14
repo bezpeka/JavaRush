@@ -12,15 +12,13 @@ import java.util.ArrayList;
 public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
         //напишите тут ваш код
-        ArrayList<Integer> lst= new ArrayList<>();
-
-        for (int i=0;i<10;i++) {
-            lst.add(Integer.parseInt(reader.readLine()));
+        ArrayList <Integer> list = new ArrayList <>();
+        for(int itemInput = 0; itemInput < 10; itemInput++) {
+            list.add(Integer.parseInt(reader.readLine()));
         }
-        for (int i=lst.size()-1;i>=0;i--) {
-            System.out.println(lst.get(i));
+        for(int itemOutput = list.size() - 1; itemOutput >= 0; itemOutput--) {
+            System.out.println(list.get(itemOutput));
         }
     }
 }
