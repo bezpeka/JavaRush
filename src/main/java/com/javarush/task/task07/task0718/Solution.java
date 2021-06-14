@@ -10,22 +10,17 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) throws IOException {
         //напишите тут ваш код
-        ArrayList <String> lst = new ArrayList<>();
-
+        ArrayList <String> lst = new ArrayList <>();
         Scanner sc = new Scanner(System.in);
-
-        for (int i=0; i<10; i++) {
+        for(int i = 0; i < 10; i++) {
             lst.add(sc.nextLine());
         }
-
-        for (int i=0; i<lst.size()-1; i++) {
-            if (lst.get(i).length()>lst.get(i+1).length()) {
-                System.out.println(i+1);
+        for(int i = 0; i < lst.size() - 1; i++) {
+            if(lst.get(i).length() > lst.get(i + 1).length()){
+                System.out.println(i + 1);
                 break;
             }
         }
-
-
     }
 }
 
