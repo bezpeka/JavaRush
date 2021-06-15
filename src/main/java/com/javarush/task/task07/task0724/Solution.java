@@ -67,7 +67,7 @@ public class Solution {
             this.mother = mother;
         }
 
-        public String toString() {
+        public String toString() { // переопределили метод класса toString класса object для получения нужного результата при выводе
             String text = "";
             text += "Имя: " + this.name;
             text += ", пол: " + (this.sex ? "мужской" : "женский");
