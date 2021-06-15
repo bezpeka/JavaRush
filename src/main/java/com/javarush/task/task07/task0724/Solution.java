@@ -73,9 +73,9 @@ public class Solution {
             text += ", пол: " + (this.sex ? "мужской" : "женский");
             text += ", возраст: " + this.age;
             if(this.father != null)
-                text += ", отец: " + this.father.name;
+                text += ", мать: " + this.father.name;
             if(this.mother != null)
-                text += ", мать: " + this.mother.name;
+                text += ", отец: " + this.mother.name;
             return text;
         }
     }
