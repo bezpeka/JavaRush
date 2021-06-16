@@ -68,7 +68,7 @@ public class Solution {
         }
 
         public String toString() { // переопределили метод класса toString класса object для получения нужного результата при выводе
-            String text = "";
+            String text = ""; // Если бы мы этого не сделали то, вывод был бы таким: com.javarush.task.task07.task0724.Solution$Human@1b6d3586
             text += "Имя: " + this.name;
             text += ", пол: " + (this.sex ? "мужской" : "женский");
             text += ", возраст: " + this.age;
