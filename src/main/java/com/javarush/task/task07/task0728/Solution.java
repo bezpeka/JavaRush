@@ -16,7 +16,9 @@ public class Solution {
         for(int i = 0; i < 20; i++) {
             array[i] = Integer.parseInt(reader.readLine());
         }
+
         sort(array);
+
         for(int x: array) {
             System.out.println(x);
         }
