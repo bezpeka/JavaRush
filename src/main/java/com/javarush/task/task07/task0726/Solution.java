@@ -6,8 +6,8 @@ package com.javarush.task.task07.task0726;
 Задача: Программа вводит с клавиатуры данные про котов и выводит их на экран.
 
 Пример:
-Cat name is Barsik, age is 6, weight is 5, tail = 22
-Cat name is Murka, age is 8, weight is 7, tail = 20
+Cat's name: Barsik, age: 6, weight: 5, tail: 22
+Cat's name: Murka, age: 8, weight: 7, tail: 20
 */
 
 import java.io.BufferedReader;
@@ -67,7 +67,7 @@ public class Solution {
 //import java.io.InputStreamReader;
 //import java.util.ArrayList;
 //
-//public class Solution {
+//public class Solution { //оригинальный вариант задачи
 //    public final static ArrayList <Cat> CATS = new ArrayList <>();
 //
 //    public static void main(String[] args) throws IOException {

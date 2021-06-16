@@ -30,33 +30,21 @@ public class Solution {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        ArrayList<String> list = new ArrayList<String>();
+        ArrayList <String> list = new ArrayList <String>();
         while (true) {
-            String s = reader.readLine();
-            if (s.isEmpty()) break;
-            list.add(s);
+            String inputWord = reader.readLine();
+            if(inputWord == null || inputWord.isEmpty()) break;
+            list.add(inputWord);
         }
-
-//        ArrayList<String> listUpperCase = new ArrayList<String>();
-//        for (int i = 0; i < list.size(); i++) {
-//            String s = list.get(i);
-//            listUpperCase.add(s.toUpperCase());
-//        }
-//
-//        for (int i = 0; i < listUpperCase.size(); i++) {
-//            System.out.println(listUpperCase.get(i));
-//        }
-
-        ArrayList<String> list2 = new ArrayList<String>();
-        for (String s : list) {
-            if (s.length() % 2 == 0)
-                list2.add(s + " " + s);
+        ArrayList <String> list2 = new ArrayList <String>();
+        for(String elements: list) {
+            if(elements.length() % 2 == 0)
+                list2.add(elements + " " + elements);
             else
-                list2.add(s + " " + s + " " + s);
+                list2.add(elements + " " + elements + " " + elements);
         }
-
-        for (int i = 0; i < list2.size(); i++) {
-            System.out.println(list2.get(i));
+        for(String s: list2) {
+            System.out.println(s);
         }
     }
 }
