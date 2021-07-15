@@ -28,6 +28,8 @@ public class D {
             E e = new E();
             e.showinfo();
             System.out.println(testImport.p1.p2.B.x + testImport.p1.p2.B.y);
+            //todo разобраться почему я не могу обращаться к статической переменной через импорт
+            //когда пишу import static testImport.p1.p2.B.*; идея удаляет эту строку
         }
     }
 }
