@@ -1,4 +1,4 @@
-package testImport.p1.p2;
+package NewbeToOracle.testImport.p1.p2;
 
 public class B {
     public static int x = 10;

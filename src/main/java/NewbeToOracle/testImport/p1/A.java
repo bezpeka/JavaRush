@@ -1,4 +1,4 @@
-package testImport.p1;
+package NewbeToOracle.testImport.p1;
 
 public class A {
     public void showinfo(){
