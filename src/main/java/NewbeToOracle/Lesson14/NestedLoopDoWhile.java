@@ -3,14 +3,19 @@ package NewbeToOracle.Lesson14;
 public class NestedLoopDoWhile {
     public static void main(String[] args) {
         int hours = 0;
-        OUTER:
+        HOURSLOOP:
         do {
             int minutes = 0;
-            INNER:
-            while (minutes < 60) {
-                System.out.println(hours + ":" + minutes);
+            MINUTESLOOP:
+            do {
+                int seconds = 0;
+                SECONDSLOOP:
+                while (seconds < 60) {
+                    System.out.println(hours + ":" + minutes + ":" + seconds);
+                    seconds++;
+                }
                 minutes++;
-            }
+            } while (minutes < 60);
             hours++;
         } while (hours < 24);
     }
