@@ -5,7 +5,7 @@ package NewbeToOracle.Lesson14;
 Специально циклы сделал одинаковыми, по 100 итераций,
 чтобы ограничить их с помощью имен циклов.
  */
-public class NestedLoop {
+public class NestedLoopFor {
     public static void clock() {
         HOURSLOOP:
         for(int hours = 0; hours <= 100; hours++) {
