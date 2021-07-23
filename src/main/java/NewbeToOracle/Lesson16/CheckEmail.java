@@ -2,8 +2,8 @@ package NewbeToOracle.Lesson16;
 
 public class CheckEmail {
     public static void email(String email) {
-        int a = 0; //позиция символа @
-        int b = 0; //позиция символа .
+        int a; //позиция символа @
+        int b; //позиция символа .
         int c = 0; //позиция символа ;
         while (c < email.length() - 1) {
             a = email.indexOf('@', c);
