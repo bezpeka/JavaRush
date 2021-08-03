@@ -4,6 +4,7 @@ public class Y extends X {
     Y() {
     }
 
+    @Override
     public void abc() {
         System.out.println('Y');
     }
