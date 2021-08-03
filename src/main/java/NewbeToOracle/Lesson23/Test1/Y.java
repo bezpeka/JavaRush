@@ -1,7 +1,7 @@
-package NewbeToOracle.Lesson23.HomeWork;
+package NewbeToOracle.Lesson23.Test1;
 
 public class Y extends X {
-    Y() {
+    Y() { //пустой конструктор с дефолтным access modifier
     }
 
     @Override
