@@ -2,23 +2,61 @@ package NewbeToOracle.Lesson25;
 
 public class HomeWork {
     public static void main(String[] args) {
-        Mechenosec m = new Mechenosec("Меченосец");
-        System.out.println(m.name);
-        m.eat();
-        m.swim();
-        m.sleep();
-        Speakable p = new Penguin("говорящий пингвин");
-        p.speak();
-        Animal l = new Lion("Животное лев");
-        System.out.println(l.name);
-        l.eat();
-        l.sleep();
-        Mammal ml = new Lion("Млекопитающее лев");
-        System.out.println(ml.name);
-        ml.run();
-        ml.eat();
-        ml.sleep();
-        ml.speak();
+        Animal a1 = new Mechenosec("Mech");
+        Animal a2 = new Penguin("Peng");
+        Animal a3 = new Lion("Leva");
+        Fish f1 = new Mechenosec("Mech1");
+        Bird b1 = new Penguin("Peng1");
+        Mammal ml = new Lion("Leva2");
+        Mechenosec mech1 = new Mechenosec("Mech2");
+        Penguin p1 = new Penguin("Peng2");
+        Lion l1 = new Lion("Leva2");
+        Speakable s1 = new Penguin("Peng3");
+        Speakable s2 = new Lion("Leva3");
+        Animal[] array1 = {a1, a2, a3, f1, b1, ml, mech1, p1, l1};
+        Speakable[] array2 = {s1, s2, b1, ml, p1, l1};
+        for(Animal a: array1) {
+            if(a instanceof Mechenosec){
+                Mechenosec m = ( Mechenosec ) a;
+                System.out.println(m.name);
+                m.eat();
+                m.sleep();
+                m.swim();
+            } else if(a instanceof Penguin){
+                Penguin p = ( Penguin ) a;
+                System.out.println(p.name);
+                p.eat();
+                p.sleep();
+                p.fly();
+                p.speak();
+            } else if(a instanceof Lion){
+                Lion l = ( Lion ) a;
+                System.out.println(l.name);
+                l.eat();
+                l.sleep();
+                l.run();
+                l.speak();
+            }
+            System.out.println("--------------------------------------");
+        }
+        for(Speakable s: array2) {
+            if(s instanceof Penguin){
+                Penguin p = ( Penguin ) s;
+                System.out.println(p.name);
+                p.eat();
+                p.sleep();
+                p.fly();
+                p.speak();
+            } else if(s instanceof Lion){
+                Lion l = ( Lion ) s;
+                System.out.println(l.name);
+                l.eat();
+                l.sleep();
+                l.run();
+                l.speak();
+            }
+            System.out.println("--------------------------------------");
+        }
     }
 }
 
