@@ -3,18 +3,18 @@ package NewbeToOracle.Lesson25;
 public class Test3 {
 }
 
-class Animal {
+class TestAnimal {
 }
 
-class Mouse extends Animal {
+class Mouse extends TestAnimal {
     void abc() {
-        def(new Animal(), new Mouse());
-        def(( Mouse ) new Animal(), new Mouse());
+        def(new TestAnimal(), new Mouse());
+        def(( Mouse ) new TestAnimal(), new Mouse());
     }
 
-    void def(Animal a1, Mouse m1) {
+    void def(TestAnimal a1, Mouse m1) {
         Mouse m2 = ( Mouse ) a1;
-        Animal a2 = ( Animal ) m1;
+        TestAnimal a2 = ( TestAnimal ) m1;
     }
 
     public static void main(String[] args) {
