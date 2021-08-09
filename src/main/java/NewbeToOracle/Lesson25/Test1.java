@@ -8,6 +8,8 @@ public class Test1 implements interface1, interface2 {
     public static void main(String[] args) {
         Test1 t = new Test1();
         (( interface1 ) t).abc();
+        System.out.println((( interface1 ) t).a);
+        //System.out.println(t.a); //напрямую переменную а вызвать нельзя потому что она есть в двух интерфейсах
     }
 }
 
