@@ -1,4 +1,4 @@
-package NewbeToOracle.Lesson24;
+package NewbeToOracle.Lesson27;
 
 public class Test {
     public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class Test {
             System.out.println(array[5]);
             System.out.println("Этот текст выведен не будет");
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Произошло исключение, которое мы обработали");
+            System.out.println("Произошло исключение, которое мы обработали: " + e + " значение массива не существует");
         }
         System.out.println("Наша программа после него продолжила свою работу");
     }
