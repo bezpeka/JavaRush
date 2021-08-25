@@ -21,26 +21,33 @@ public class Homework {
             System.out.println(e.getMessage());
         }
     }
+}
 
-    static class Tiger {
-        public void eat(String food) {
-            if(!food.equals("meat")){
-                throw new NoWaterException("Tiger don`t eat " + food);
-            }
-            System.out.println("Tiger drink water");
+class Tiger {
+    public void eat(String food) {
+        if(!food.equals("meat")){
+            throw new NoMeatException("Tiger don`t eat " + food);
         }
-
-        public void drink(String liquid) throws NoWaterException {
-            if(!liquid.equals("water")){
-                throw new NoWaterException("Tiger don`t drink " + liquid);
-            }
-            System.out.println("Tiger drink water");
-        }
+        System.out.println("Tiger eat meat");
     }
 
-    static class NoWaterException extends RuntimeException {
-        NoWaterException(String s) {
-            super(s);
+    public void drink(String liquid) throws NoWaterException {
+        if(!liquid.equals("water")){
+            throw new NoWaterException("Tiger don`t drink " + liquid);
         }
+        System.out.println("Tiger drink water");
     }
 }
+
+class NoMeatException extends RuntimeException {
+    NoMeatException(String s) {
+        super(s);
+    }
+}
+
+class NoWaterException extends Exception {
+    NoWaterException(String s) {
+        super(s);
+    }
+}
+
