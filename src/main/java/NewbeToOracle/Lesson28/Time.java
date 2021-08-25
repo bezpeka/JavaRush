@@ -8,6 +8,8 @@ import java.time.Month;
 public class Time {
     public static void main(String[] args) {
         //Данные объекты создаются не с помощью конструктора, а с помощью статического метода of
+        LocalTime ldtStart = LocalTime.now();
+        System.out.println(ldtStart);
         LocalDate ld1 = LocalDate.of(2021, 8, 25);
         System.out.println(ld1);
         LocalDate ld2 = LocalDate.of(2021, Month.AUGUST, 25);
@@ -32,5 +34,9 @@ public class Time {
         System.out.println(ldt31);
         LocalDateTime ldt4 = LocalDateTime.of(ld1, lt1);
         System.out.println(ldt4);
+        LocalTime ldtFinish = LocalTime.now();
+        System.out.println(ldtFinish);
+//        LocalTime ldtRes = ldtFinish.minusNanos(ldtStart);
+//        System.out.println(ldtRes);
     }
 }
