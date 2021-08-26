@@ -39,6 +39,5 @@ public class Time {
         System.out.println(dFinish);
         long dRes = dFinish.getTime() - dStart.getTime();
         System.out.println("Длительность выполнения программы " + dRes + " мс");
-
     }
 }
