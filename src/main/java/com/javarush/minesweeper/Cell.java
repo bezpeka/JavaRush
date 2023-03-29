@@ -20,5 +20,10 @@ public class Cell {
     public void open() {
         isOpen = true;
     }
+
+    public void setMine() {
+        isMine = true;
+    }
+
 }
 

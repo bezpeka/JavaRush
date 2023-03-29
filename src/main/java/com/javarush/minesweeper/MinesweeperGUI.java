@@ -2,6 +2,8 @@ package com.javarush.minesweeper;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class MinesweeperGUI {
     private JFrame frame;
@@ -40,5 +42,45 @@ public class MinesweeperGUI {
             super();
             this.row = row;
             this.col = col;
+        }
 
+        public int getRow() {
+            return row;
+        }
 
+        public int getCol() {
+            return col;
+        }
+    }
+
+    private class CellButtonListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            CellButton button = (CellButton) e.getSource();
+            int row = button.getRow();
+            int col = button.getCol();
+            Cell cell = board.getCell(row, col);
+            cell.open();
+            updateButtons();
+        }
+    }
+
+    private void updateButtons() {
+        for (Component component : boardPanel.getComponents()) {
+            if (component instanceof CellButton) {
+                CellButton button = (CellButton) component;
+                int row = button.getRow();
+                int col = button.getCol();
+                Cell cell = board.getCell(row, col);
+                if (cell.isOpen()) {
+                    if (cell.isMine()) {
+                        button.setText("X");
+                    } else {
+                        button.setText(Integer.toString(board.getAdjacentMines(row, col)));
+                    }
+                    button.setEnabled(false);
+                }
+            }
+        }
+    }
+}

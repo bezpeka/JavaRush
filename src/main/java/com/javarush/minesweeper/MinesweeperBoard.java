@@ -1,95 +1,81 @@
 package com.javarush.minesweeper;
 
+import java.util.Random;
+
 public class MinesweeperBoard {
-    private Cell[][] board;
+    private int rows;
+    private int cols;
+    private int numMines;
+    private Cell[][] cells;
 
-    public MinesweeperBoard(int rows, int cols, int mines) {
-        board = new Cell[rows][cols];
-        int minesLeft = mines;
+    public MinesweeperBoard(int rows, int cols, int numMines) {
+        this.rows = rows;
+        this.cols = cols;
+        this.numMines = numMines;
 
-        // Initialize board with empty cells
+        // Initialize cells array
+        cells = new Cell[rows][cols];
         for (int row = 0; row < rows; row++) {
             for (int col = 0; col < cols; col++) {
-                board[row][col] = new Cell(false);
+                cells[row][col] = new Cell(false);
             }
         }
 
-        // Add mines to board
-        while (minesLeft > 0) {
-            int row = (int) (Math.random() * rows);
-            int col = (int) (Math.random() * cols);
+        // Generate mines
+        Random random = new Random();
 
-            if (!board[row][col].isMine()) {
-                board[row][col] = new Cell(true);
-                minesLeft--;
+        int minesGenerated = 0;
+        while (minesGenerated < numMines) {
+            int row = random.nextInt(rows);
+            int col = random.nextInt(cols);
+            if (!cells[row][col].isMine()) {
+                cells[row][col].setMine();
+                minesGenerated++;
+                System.out.println("Mine generated at (" + row + ", " + col + ")");
             }
         }
+    }
+
+    public int getRows() {
+        return rows;
+    }
+
+    public int getCols() {
+        return cols;
     }
 
     public Cell getCell(int row, int col) {
-        return board[row][col];
+        return cells[row][col];
     }
 
-    public void printBoard() {
-        System.out.print("  ");
-        for (int col = 0; col < board[0].length; col++) {
-            System.out.print(col + " ");
-        }
-        System.out.println();
-
-        for (int row = 0; row < board.length; row++) {
-            System.out.print(row + " ");
-            for (int col = 0; col < board[0].length; col++) {
-                if (!board[row][col].isOpen()) {
-                    System.out.print("- ");
-                } else if (board[row][col].isMine()) {
-                    System.out.print("* ");
-                } else {
-                    System.out.print("  ");
+    public int getAdjacentMines(int row, int col) {
+        int count = 0;
+        for (int r = Math.max(0, row - 1); r <= Math.min(rows - 1, row + 1); r++) {
+            for (int c = Math.max(0, col - 1); c <= Math.min(cols - 1, col + 1); c++) {
+                if (r == row && c == col) {
+                    continue;
                 }
-            }
-            System.out.println();
-        }
-    }
-
-    //Метод openCell открывает выбранную ячейку и рекурсивно открывает все соседние ячейки, если выбранная ячейка не содержит мины.
-    public void openCell(int row, int col) {
-        Cell cell = board[row][col];
-
-        if (!cell.isOpen()) {
-            cell.open();
-
-            if (cell.isMine()) {
-                System.out.println("Game over! You hit a mine.");
-                printBoard();
-            } else {
-                // Open adjacent cells
-                for (int i = row - 1; i <= row + 1; i++) {
-                    for (int j = col - 1; j <= col + 1; j++) {
-                        if (i >= 0 && i < board.length && j >= 0 && j < board[0].length) {
-                            openCell(i, j);
-                        }
-                    }
-                }
-
-                if (isGameWon()) {
-                    System.out.println("Congratulations! You won the game.");
-                    printBoard();
+                if (cells[r][c].isMine()) {
+                    count++;
                 }
             }
         }
-    }
-
-    //метод isGameWon(), который проверит, выиграл ли игрок. Для этого нам нужно проверить, остались ли на поле неоткрытые ячейки, которые не содержат мины.
-    public boolean isGameWon() {
-        for (int row = 0; row < board.length; row++) {
-            for (int col = 0; col < board[0].length; col++) {
-                Cell cell = board[row][col];
-                if (!cell.isOpen() && !cell.isMine()) {
-                    return false;
-                }
-            }
-        }
-        return true;
+        return count;
     }
 }
+
+//public class Cell {
+//    private boolean isMine;
+//
+//    public Cell(boolean isMine) {
+//        this.isMine = isMine;
+//    }
+//
+//    public boolean isMine() {
+//        return isMine;
+//    }
+//
+//    public void setMine() {
+//        isMine = true;
+//    }
+//}

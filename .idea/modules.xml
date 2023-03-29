@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HiLo.iml" filepath="$PROJECT_DIR$/HiLo.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaRush.iml" filepath="$PROJECT_DIR$/JavaRush.iml" />
     </modules>
   </component>
