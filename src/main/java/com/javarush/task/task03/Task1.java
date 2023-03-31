@@ -12,7 +12,7 @@ public class Task1 {
         div (2, 4);
     }
 
-    public static void div (int a, int b) {
+    public static void div (float a, float b) {
         System.out.println (a / b);//напишите тут ваш код
     }
 }
