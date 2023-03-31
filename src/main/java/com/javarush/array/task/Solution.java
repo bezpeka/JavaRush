@@ -19,6 +19,7 @@ import java.io.StringReader;
  * 2.Метод decode(StringReader reader, int key) должен вернуть дешифрованную строку что хранится в StringReader - е.
  * 3.Возвращаемый объект ни при каких условиях не должен быть null.
  */
+
 public class Solution {
     public static void main(String[] args) throws IOException {
         StringReader reader = new StringReader("Khoor#Dpljr#&C,₷B'3");
@@ -26,17 +27,13 @@ public class Solution {
     }
 
     public static String decode(StringReader reader, int key) throws IOException {
-        if(reader == null) return "";
+        if (reader == null) return "";
         StringBuilder sb = new StringBuilder();
         BufferedReader bufferedReader = new BufferedReader(reader);
-
         String string = bufferedReader.readLine();
-
-
-        for(char c: string.toCharArray()) {
-            sb.append(( char ) (c + key));
+        for (char c : string.toCharArray()) {
+            sb.append((char) (c + key));
         }
-
         return sb.toString();
     }
 }

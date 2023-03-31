@@ -11,11 +11,9 @@ public class Minesweeper extends JFrame {
 
     public Minesweeper(int rows, int cols, int numMines) {
         board = new MinesweeperBoard(rows, cols, numMines);
-
         setTitle("Minesweeper");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
-
         Container container = getContentPane();
         container.setLayout(new GridLayout(rows, cols));
         buttons = new JButton[rows][cols];
@@ -24,10 +22,10 @@ public class Minesweeper extends JFrame {
                 JButton button = new JButton();
                 button.addActionListener(new CellButtonListener(row, col));
                 container.add(button);
+                button.setFont(new Font("Arial", Font.PLAIN, 12));
                 buttons[row][col] = button;
             }
         }
-
         setSize(cols * 40, rows * 40);
         setLocationRelativeTo(null);
         setVisible(true);
@@ -54,12 +52,11 @@ public class Minesweeper extends JFrame {
                     }
                 }
             } else {
-                buttons[row][col].setText(String.valueOf(adjacentMines));
+                buttons[row][col].setFont(new Font("Arial", Font.PLAIN, 12));
+                buttons[row][col].setText(Integer.toString(adjacentMines));
             }
         }
     }
-
-
 
 
     public class CellButtonListener implements ActionListener {

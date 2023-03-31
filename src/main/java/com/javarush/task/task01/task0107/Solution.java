@@ -9,12 +9,12 @@ public class Solution {
         int x = 2;
         int y = 12;
 
-        //x = x * 3;
-        y = x + y;
-        x = y - x;
-        y = y - x;
+        x = x * 3; // x = 2 * 3 = 6
+        y = x + y; // y = 6 + 12 = 18
+        x = y - x; // x = 18 - 6 = 12
+        y = y - x; // y = 18 - 12 = 6
 
-        System.out.println(x);
-        System.out.println(y);
+        System.out.println(x); // x = 12
+        System.out.println(y); // y = 6
     }
 }

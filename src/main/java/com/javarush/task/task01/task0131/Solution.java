@@ -9,8 +9,7 @@ public class Solution {
         System.out.println(getMetreFromCentimetre(243));
     }
 
-    public static int getMetreFromCentimetre(int centimetre) {
-        //напишите тут ваш код
+    public static float getMetreFromCentimetre(float centimetre) {
         return centimetre / 100;
     }
 }

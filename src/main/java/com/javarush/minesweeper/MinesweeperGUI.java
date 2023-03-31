@@ -76,7 +76,8 @@ public class MinesweeperGUI {
                     if (cell.isMine()) {
                         button.setText("X");
                     } else {
-                        button.setText(Integer.toString(board.getAdjacentMines(row, col)));
+                        int adjacentMines = board.getAdjacentMines(row, col);
+                        button.setText(adjacentMines == 0 ? "" : Integer.toString(adjacentMines));
                     }
                     button.setEnabled(false);
                 }
